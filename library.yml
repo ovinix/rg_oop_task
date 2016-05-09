@@ -1,0 +1,145 @@
+---
+:readers:
+- &16 !ruby/object:Reader
+  name: Bob
+  email: bob@email.com
+  city: London
+  street: str. One
+  house: 1
+- &14 !ruby/object:Reader
+  name: Ben
+  email: ben@email.com
+  city: Paris
+  street: str. Two
+  house: 2
+- &10 !ruby/object:Reader
+  name: David
+  email: david@email.com
+  city: New York
+  street: str. Three
+  house: 3
+- &12 !ruby/object:Reader
+  name: Eric
+  email: eric@email.com
+  city: Chicago
+  street: str. Four
+  house: 4
+- &9 !ruby/object:Reader
+  name: Ann
+  email: ann@email.com
+  city: Atlanta
+  street: str. Five
+  house: 5
+- &7 !ruby/object:Reader
+  name: Branda
+  email: Branda@email.com
+  city: Berlin
+  street: str. Six
+  house: 6
+:authors:
+- &5 !ruby/object:Author
+  name: Stephen Edwin King
+  biography: Something
+- &1 !ruby/object:Author
+  name: Margaret Munnerlyn Mitchell
+  biography: Something
+- &3 !ruby/object:Author
+  name: George Raymond Richard Martin
+  biography: Something
+- &4 !ruby/object:Author
+  name: Joanne Rowling
+  biography: Something
+- !ruby/object:Author
+  name: John Ronald Reuel Tolkien
+  biography: Something
+- &2 !ruby/object:Author
+  name: Mikhail Bulgakov
+  biography: Something
+:books:
+- &6 !ruby/object:Book
+  title: Gone With The Wind
+  author: *1
+- &15 !ruby/object:Book
+  title: The Master and Margarita
+  author: *2
+- &8 !ruby/object:Book
+  title: Game Of Thrones
+  author: *3
+- &11 !ruby/object:Book
+  title: Heart of a Dog
+  author: *2
+- &13 !ruby/object:Book
+  title: Harry Potter
+  author: *4
+- !ruby/object:Book
+  title: Green Mile
+  author: *5
+:orders:
+- !ruby/object:Order
+  book: *6
+  reader: *7
+  date: 2016-05-06 11:59:12.142468471 +03:00
+- !ruby/object:Order
+  book: *8
+  reader: *9
+  date: 2016-05-06 11:59:12.142470789 +03:00
+- !ruby/object:Order
+  book: *6
+  reader: *7
+  date: 2016-05-06 11:59:12.142471939 +03:00
+- !ruby/object:Order
+  book: *8
+  reader: *10
+  date: 2016-05-06 11:59:12.142472863 +03:00
+- !ruby/object:Order
+  book: *11
+  reader: *12
+  date: 2016-05-06 11:59:12.142473881 +03:00
+- !ruby/object:Order
+  book: *13
+  reader: *9
+  date: 2016-05-06 11:59:12.142474733 +03:00
+- !ruby/object:Order
+  book: *11
+  reader: *14
+  date: 2016-05-09 11:51:53.523737090 +03:00
+- !ruby/object:Order
+  book: *13
+  reader: *14
+  date: 2016-05-09 11:51:53.523740105 +03:00
+- !ruby/object:Order
+  book: *8
+  reader: *12
+  date: 2016-05-09 11:51:53.523741584 +03:00
+- !ruby/object:Order
+  book: *8
+  reader: *7
+  date: 2016-05-09 11:51:53.523742732 +03:00
+- !ruby/object:Order
+  book: *15
+  reader: *16
+  date: 2016-05-09 11:51:53.523743898 +03:00
+- !ruby/object:Order
+  book: *8
+  reader: *16
+  date: 2016-05-09 11:51:53.523744915 +03:00
+- !ruby/object:Order
+  book: *15
+  reader: *7
+  date: 2016-05-09 11:53:32.504627260 +03:00
+- !ruby/object:Order
+  book: *6
+  reader: *10
+  date: 2016-05-09 11:53:32.504630353 +03:00
+- !ruby/object:Order
+  book: *15
+  reader: *9
+  date: 2016-05-09 11:53:32.504632723 +03:00
+- !ruby/object:Order
+  book: *11
+  reader: *9
+  date: 2016-05-09 11:53:32.504634434 +03:00
+- !ruby/object:Order
+  book: *13
+  reader: *12
+  date: 2016-05-09 11:53:32.504635405 +03:00
