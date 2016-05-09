@@ -68,7 +68,7 @@ end
 library = Library.load
 
 puts "The most popular reader is '#{library.popular_reader}' " \
-      "with #{library.orders_for(library.popular_reader).count} book(s)."
+      "with #{library.orders_count_for(library.popular_reader)} book(s)."
 
 puts "The most popular book '#{library.popular_book}' " \
       "was taken #{library.orders_for(library.popular_book).count} time(s)."
