@@ -38,19 +38,19 @@
   house: 6
 :authors:
 - &5 !ruby/object:Author
-  name: Stephen Edwin King
+  name: Stephen King
   biography: Something
 - &1 !ruby/object:Author
-  name: Margaret Munnerlyn Mitchell
+  name: Margaret Mitchell
   biography: Something
 - &3 !ruby/object:Author
-  name: George Raymond Richard Martin
+  name: George Martin
   biography: Something
 - &4 !ruby/object:Author
   name: Joanne Rowling
   biography: Something
 - !ruby/object:Author
-  name: John Ronald Reuel Tolkien
+  name: John Tolkien
   biography: Something
 - &2 !ruby/object:Author
   name: Mikhail Bulgakov
