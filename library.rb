@@ -16,13 +16,6 @@ class Library
     popular.uniq.max_by(popular.uniq.count) { |obj| popular.count(obj) }
   end
 
-  def popular_with_count_by(attr)
-    popular = ordered_items_by(attr)
-    popular_hash = {}
-    popular.uniq.map { |obj| popular_hash[obj] = popular.count(obj) }
-    popular_hash.sort_by(&:last).reverse.to_h
-  end
-
   def orders_count_for(item)
     ordered_items_by(item.class.to_s.downcase).count(item)
   end
